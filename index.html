@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description"
+    content="Where is my brewery? Find you favourites breweries!" />
+  <meta property="og:site_name" content="Find My Brewery" />
+  <meta property="og:description"
+    content="Where is my brewery? Find you favourites breweries!" />
+  <meta property="og:title" content="Find My Brewery" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url"
+    content="" />
+  <meta property="og:image" content="" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@angeleraser" />
+  <meta name="twitter:title" content="Find My Brewery" />
+  <meta name="twitter:description"
+    content="Where is my brewery? Find you favourites breweries!" />
+  <meta name="twitter:image" content="" />
+  <meta name="twitter:image:alt" content="Find My Brewery Website image" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Style Css Link-->
+  <link rel="stylesheet" href="./styles/style.css" />
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/e25c9e9fc4.js"
+    crossorigin="anonymous"></script>
+  <title>Second Project</title>
+</head>
+
+<body>
+  <!--Header-->
+  <header class="header">
+    <h1 class="header__title">Welcome to Brewery Selector!</h1>
+    <!-- Beer background -->
+    <img class="header__bg-image" src="./assets/images/beer-header.jpg"
+      alt="Beer header">
+  </header>
+  <!-- Main section -->
+  <main class="main">
+    <!--Main Section-->
+    <!-- Filters section -->
+    <section class="main__filters-section">
+      <!-- Choose a State -->
+      <form>
+        <select id="select-state">
+          <option value="none" disabled selected>Choose state</option>
+          <option value="Alabama">Alabama</option>
+          <option value="Alaska">Alaska</option>
+          <option value="Arizona">Arizona</option>
+          <option value="Arkansas">Arkansas</option>
+          <option value="California">California</option>
+          <option value="Colorado">Colorado</option>
+          <option value="Connecticut">Connecticut</option>
+          <option value="Delaware">Delaware</option>
+          <option value="Florida">Florida</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Guam">Guam</option>
+          <option value="Hawaii">Hawaii</option>
+          <option value="Idaho">Idaho</option>
+          <option value="Illinois">Illinois</option>
+          <option value="Indiana">Indiana</option>
+          <option value="Iowa">Iowa</option>
+          <option value="Kansas">Kansas</option>
+          <option value="Kentucky">Kentucky</option>
+          <option value="Louisiana">Louisiana</option>
+          <option value="Maine">Maine</option>
+          <option value="Maryland">Maryland</option>
+          <option value="Massachusetts">Massachusetts</option>
+          <option value="Michigan">Michigan</option>
+          <option value="Minnesota">Minnesota</option>
+          <option value="Mississippi">Mississippi</option>
+          <option value="Missouri">Missouri</option>
+          <option value="Montana">Montana</option>
+          <option value="Nebraska">Nebraska</option>
+          <option value="Nevada">Nevada</option>
+          <option value="New Hampshire">New Hampshire</option>
+          <option value="New Jersey">New Jersey</option>
+          <option value="New Mexico">New Mexico</option>
+          <option value="New York">New York</option>
+          <option value="North Carolina">North Carolina</option>
+          <option value="North Dakota">North Dakota</option>
+          <option value="Ohio">Ohio</option>
+          <option value="Oklahoma">Oklahoma</option>
+          <option value="Oregon">Oregon</option>
+          <option value="Pennsylvania">Pennsylvania</option>
+          <option value="South Carolina">South Carolina</option>
+          <option value="South Dakota">South Dakota</option>
+          <option value="Tennessee">Tennessee</option>
+          <option value="Texas">Texas</option>
+          <option value="Utah">Utah</option>
+          <option value="Vermont">Vermont</option>
+          <option value="Virginia">Virginia</option>
+          <option value="Washington">Washington</option>
+          <option value="West Virginia">West Virginia</option>
+          <option value="Wisconsin">Wisconsin</option>
+          <option value="Wyoming">Wyoming</option>
+        </select>
+      </form>
+      <!-- Filter by City -->
+      <form>
+        <select id="select-city" disabled="true">
+          <option disabled selected value="none">Filter by city</option>
+        </select>
+      </form>
+    </section>
+    <!-- Results and favourite wrapper -->
+    <div class="wrapper">
+      <!-- Results Section-->
+      <section class="results-wrapper wrapper__section">
+        <h2 class="wrapper__section__heading">
+          🍻Search result
+        </h2>
+        <ul id="results-list" class="results search-list">
+        </ul>
+      </section>
+      <!-- favourite Section -->
+      <section class="favourite-wrapper wrapper__section">
+        <h2 class="wrapper__section__heading">
+          ⭐Favourites
+          <span id="favourite-count">0/5</span>
+        </h2>
+        <ul id="favourite-list" class="results favourite-list">
+          <div class="helper-message">
+            Add your favourite brewery here
+          </div>
+        </ul>
+      </section>
+    </div>
+
+    <section class="main__form-section">
+      <h2 class="main__form-section__title">
+        ARE WE MISSING A BREWERY?
+      </h2>
+
+      <p class="main__form-section__message">
+        Tell us about a brewery you think <br>
+        we should add by filling out the form below.
+      </p>
+      <!--Contact main information  -->
+      <form id="contact-form" class="main__form-section__form">
+        <fieldset id='contact-fieldset'>
+          <div class="main__form-section__form__fields-control is-group">
+            <label for="name">
+              <input required id="name-input" type="text" name="name"
+                placeholder="Your name" />
+            </label>
+            <label for="email">
+              <input required id="email-input" name='email' type="email"
+                placeholder="Your email">
+            </label>
+          </div>
+          <div class="main__form-section__form__fields-control is-group">
+            <label for="state">
+              <input required id="state-input" name="state" type="text"
+                placeholder="State" />
+            </label>
+            <label for="city">
+              <input required id="city-input" name="city" type="city"
+                placeholder="City">
+            </label>
+          </div>
+          <div class="main__form-section__form__fields-control">
+            <label for="phone">
+              <input required id="phone-input" name="phone" type="text"
+                placeholder="Phone" />
+            </label>
+          </div>
+          <div class="main__form-section__form__fields-control">
+            <label for="message">
+              <textarea required id="message-input" name="message"
+                placeholder="Message" cols="30" rows="80"></textarea>
+            </label>
+          </div>
+
+          <!--Contact main information button  -->
+          <button class="button" type="submit">
+            Submit
+            <i class="fas fa-long-arrow-alt-right icon"></i>
+          </button>
+        </fieldset>
+        <div id="success-submit-msg" class="success-message">
+        </div>
+      </form>
+    </section>
+  </main>
+  <!--Footer Section-->
+  <footer class="footer">
+    <p>
+      <a href="https://junocollege.com/" target="_blank">Copyright &#169
+        Juno College
+      </a>
+    </p>
+  </footer>
+  <!--JS Script-->
+  <script src="script.js"></script>
+</body>
+
+</html>

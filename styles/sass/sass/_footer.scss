@@ -1,0 +1,15 @@
+.footer {
+  font-family: $font-lora, cursive;
+  font-weight: bolder;
+  text-align: center;
+  background-color: $light-blue;
+  padding: 20px 0;
+  bottom: 0;
+  width: 100%;
+
+  a {
+    font-size: 14px;
+    text-decoration: none;
+    color: $dark-blue;
+  }
+}
